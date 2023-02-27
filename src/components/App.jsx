@@ -29,7 +29,6 @@ export const App = () => {
           </nav>
         </div>
         <Routes>
-          {/* <Route path="/" element={<NaviBar />} /> */}
           <Route path="/" element={<Trending />} />
           <Route path="/movie/:movieId" element={<MovieDetails />}>
             <Route path="cast" element={<Cast />} />
