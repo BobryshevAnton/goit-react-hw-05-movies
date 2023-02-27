@@ -1,0 +1,19 @@
+.filmCard {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  padding: 25px 10px;
+  background-color: rgb(207, 206, 206);
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px rgb(170, 170, 170);
+  flex-direction: column;
+}
+.filmImg {
+  width: 320px;
+  border-radius: 5px;
+}
+.filmCardTitle {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}

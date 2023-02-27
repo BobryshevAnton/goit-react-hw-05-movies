@@ -1,0 +1,62 @@
+.trendStyle {
+  display: flex;
+  height: 80px;
+  background-color: rgb(186, 186, 186);
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(170 170 170);
+  align-items: center;
+  padding-left: 20px;
+}
+.trendTitle {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.trendList {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(220, 220, 220);
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(170, 170, 170);
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+.trendCard {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  padding-left: 20px;
+  background-color: rgb(207, 206, 206);
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px rgb(170, 170, 170);
+  flex-direction: column;
+}
+.trendImg {
+  width: 370px;
+  border-radius: 5px;
+}
+.trendCardTitle {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+.trendBtn {
+  padding: 8px;
+  color: #0b0b0b;
+  letter-spacing: 0.06em;
+  text-decoration: underline;
+  background-color: #be7617;
+  border-style: solid;
+  border-color: rgb(54, 54, 54);
+  border-radius: 5px;
+  text-decoration: none;
+}
+.trendBtn:hover {
+  color: #dddddd;
+  background-color: #aeadad;
+  border-color: #be7617;
+}

@@ -1,0 +1,19 @@
+.appBar {
+  display: flex;
+  background-color: #be7617;
+  box-shadow: 10px 5px 5px rgb(170 170 170);
+  border-radius: 5px;
+  padding: 30px 20px;
+  margin: 10px 20px;
+}
+.appNav {
+  font-size: 20px;
+  margin-right: 25px;
+  color: rgb(0, 0, 0);
+}
+.appNav:hover,
+.appNav:focus {
+  font-size: 20px;
+  margin-right: 25px;
+  color: rgb(196, 196, 196);
+}

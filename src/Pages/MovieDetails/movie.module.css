@@ -1,0 +1,64 @@
+.moviePage {
+  display: flex;
+  margin-top: 5px;
+  padding: 20px 20px;
+  background-color: rgb(237, 236, 236);
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(170, 170, 170);
+}
+.movieImg {
+  width: 250px;
+  border-radius: 10px;
+}
+.movieInfo {
+  margin: 20px;
+  color: rgb(65, 65, 65);
+}
+.movieTitle {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.movieSubT {
+  font-size: 18px;
+  font-weight: 600;
+}
+.moviePartOne {
+  display: flex;
+}
+.movieAddInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  padding: 20px 20px;
+  background-color: rgb(237, 236, 236);
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(170, 170, 170);
+}
+.addTitle {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+.addList {
+  margin: 0;
+}
+.movieBtn {
+  display: flex;
+  align-items: center;
+
+  color: #0b0b0b;
+  height: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+
+  padding-left: 20px;
+  background-color: rgb(186, 186, 186);
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(170 170 170);
+}
+.movieBtn:hover {
+  color: #dddddd;
+}
