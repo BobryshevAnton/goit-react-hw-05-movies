@@ -2,43 +2,36 @@
 import { lazy, Suspense } from 'react';
 
 import { Route, Routes } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
-import { Trending } from './Trending/Trending';
+import { SharedLayout } from './SharedLayout';
+import { Home } from 'Pages/Home/Home';
 import { MovieDetails } from 'Pages/MovieDetails/MovieDetails';
-//
+import { MovieSearch } from 'Pages/MovieSearch/MovieSearch';
+
 import { Cast } from './Cast/Cast';
 import { Rewievs } from './Rewievs/Rewievs';
-import { MovieSearch } from 'Pages/MovieSearch/MovieSearch';
-//
+
 import { NotFound } from 'Pages/NotFound';
+import { Footer } from './Footer/Footer';
 
-import css from './app.module.css';
-
+// const Cast = lazy(() => import('./Cast/Cast'));
+// const Rewievs = lazy(() => import('./Rewievs/Rewievs'));
+// const NotFound = lazy(() => import('Pages/NotFound'));
 export const App = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <div>
-        <div className={css.appBar}>
-          <nav>
-            <NavLink to="/" className={css.appNav}>
-              Home
-            </NavLink>
-            <NavLink to="/movie" className={css.appNav}>
-              Movie
-            </NavLink>
-          </nav>
-        </div>
-        <Routes>
-          <Route path="/" element={<Trending />} />
+    <div>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/movie" element={<MovieSearch />} />
           <Route path="/movie/:movieId" element={<MovieDetails />}>
             <Route path="cast" element={<Cast />} />
             <Route path="rewievs" element={<Rewievs />} />
           </Route>
-          <Route path="/movie" element={<MovieSearch />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
-    </Suspense>
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 };
 // element={<Navigate to="/" />}

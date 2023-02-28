@@ -11,7 +11,7 @@ export const SharedLayout = () => {
         <Link to="/" className={css.appNav}>
           Home
         </Link>
-        <Link to="/movies" className={css.appNav}>
+        <Link to="/movie" className={css.appNav}>
           Movies
         </Link>
       </nav>
