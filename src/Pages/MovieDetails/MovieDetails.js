@@ -18,8 +18,6 @@ export const MovieDetails = () => {
 
   const goBack = location?.state?.from ?? '/';
 
-  // const genresList = details.genres.map(genre => genre.name).join(',');
-
   return (
     <>
       <Section>
@@ -48,9 +46,11 @@ export const MovieDetails = () => {
             <span className={css.movieSubT}> {details.overview}</span>
 
             <p className={css.movieTitle}>Genres:</p>
-            {/* <span className={css.movieSubT}>
-              {details.genres.map(genre => genre.name).join(', ')}
-            </span> */}
+            <span className={css.movieSubT}>
+              {details.genres
+                ? details.genres.map(el => el.name).join(' ')
+                : ''}
+            </span>
           </div>
         </div>
         <div className={css.movieAddInfo}>
@@ -74,3 +74,4 @@ export const MovieDetails = () => {
     </>
   );
 };
+export default MovieDetails;

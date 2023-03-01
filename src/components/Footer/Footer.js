@@ -11,3 +11,4 @@ export const Footer = () => {
     </Section>
   );
 };
+export default Footer;

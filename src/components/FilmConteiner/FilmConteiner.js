@@ -1,5 +1,6 @@
-import css from './filmConteiner.module.css';
 import { TrendingList } from 'components/Trending/TrendingList';
+import PropTypes from 'prop-types';
+import css from './filmConteiner.module.css';
 
 export const FilmConteiner = ({ films }) => {
   return (
@@ -11,4 +12,9 @@ export const FilmConteiner = ({ films }) => {
       <TrendingList trending={films} />
     </div>
   );
+};
+export default FilmConteiner;
+
+FilmConteiner.propTypes = {
+  films: PropTypes.object,
 };

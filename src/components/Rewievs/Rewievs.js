@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { fetchReviews } from 'fetch/fetch';
 import { useState, useEffect } from 'react';
+
 import css from './rewiew.module.css';
 
 export const Rewievs = () => {
@@ -35,5 +36,4 @@ export const Rewievs = () => {
     </>
   );
 };
-//Autor: {author }
-//{content}
+export default Rewievs;

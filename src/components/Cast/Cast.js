@@ -1,5 +1,4 @@
 import { useParams } from 'react-router-dom';
-
 import { fetchCredits } from 'fetch/fetch';
 import { useState, useEffect } from 'react';
 import css from './cast.module.css';
@@ -17,7 +16,7 @@ export const Cast = () => {
         <ul className={css.castList}>
           {castInfo.map(({ id, profile_path, name, character }) => {
             return (
-              <li key={id} className={css.castCard}>
+              <li key={id + name + character} className={css.castCard}>
                 <img
                   className={css.castImg}
                   src={
@@ -42,3 +41,4 @@ export const Cast = () => {
     </>
   );
 };
+export default Cast;

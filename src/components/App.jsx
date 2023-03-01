@@ -1,21 +1,17 @@
-// import { NaviBar } from './NaviBar';
-import { lazy, Suspense } from 'react';
+import { lazy } from 'react';
 
 import { Route, Routes } from 'react-router-dom';
 import { SharedLayout } from './SharedLayout';
-import { Home } from 'Pages/Home/Home';
-import { MovieDetails } from 'Pages/MovieDetails/MovieDetails';
-import { MovieSearch } from 'Pages/MovieSearch/MovieSearch';
 
-import { Cast } from './Cast/Cast';
-import { Rewievs } from './Rewievs/Rewievs';
+const Home = lazy(() => import('Pages/Home/Home'));
+const MovieDetails = lazy(() => import('Pages/MovieDetails/MovieDetails'));
+const MovieSearch = lazy(() => import('Pages/MovieSearch/MovieSearch'));
 
-import { NotFound } from 'Pages/NotFound';
-import { Footer } from './Footer/Footer';
+const Cast = lazy(() => import('./Cast/Cast'));
+const Rewievs = lazy(() => import('./Rewievs/Rewievs'));
+const NotFound = lazy(() => import('Pages/NotFound'));
+const Footer = lazy(() => import('./Footer/Footer'));
 
-// const Cast = lazy(() => import('./Cast/Cast'));
-// const Rewievs = lazy(() => import('./Rewievs/Rewievs'));
-// const NotFound = lazy(() => import('Pages/NotFound'));
 export const App = () => {
   return (
     <div>
@@ -34,4 +30,3 @@ export const App = () => {
     </div>
   );
 };
-// element={<Navigate to="/" />}

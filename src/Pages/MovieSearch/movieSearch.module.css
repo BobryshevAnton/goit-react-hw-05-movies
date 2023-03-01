@@ -59,6 +59,24 @@
   background-color: #aeadad;
   border-color: #be7617;
 }
+.trendListText {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+  background-color: rgb(72, 144, 111);
+  border-radius: 5px;
+
+  box-shadow: 10px 5px 5px rgb(170, 170, 170);
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.trendText {
+  font-size: 18px;
+  font-weight: 600;
+}
 /* .searchStyle {
   display: flex;
   color: #0b0b0b;

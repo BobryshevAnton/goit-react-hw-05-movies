@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import css from './searchForm.module.css';
+import PropTypes from 'prop-types';
 import { Section } from 'components/Section/Section';
 
 export const SearchForm = ({ onSubmit }) => {
@@ -8,6 +9,7 @@ export const SearchForm = ({ onSubmit }) => {
   const handleSubmit = e => {
     e.preventDefault();
     onSubmit(value);
+    e.target.reset();
     setValue('');
   };
 
@@ -30,4 +32,9 @@ export const SearchForm = ({ onSubmit }) => {
       </div>
     </Section>
   );
+};
+export default SearchForm;
+
+SearchForm.propTypes = {
+  onSubmit: PropTypes.func,
 };
